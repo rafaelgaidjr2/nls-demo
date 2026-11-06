@@ -1,0 +1,5 @@
+dist/xlsx.full.min.js
+test-files/
+node_modules/
+.npm-cache/
+SHA256SUMS.txt

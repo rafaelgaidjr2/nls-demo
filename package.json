@@ -1,0 +1,16 @@
+{
+  "name": "construction-data-reconciliation-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser-side Primavera schedule and financial data reconciliation",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "dev": "node scripts/serve.cjs",
+    "check": "node --check dist/core.js && node --check dist/app.js && node --check scripts/serve.cjs",
+    "test": "node test.cjs"
+  },
+  "license": "UNLICENSED"
+}
