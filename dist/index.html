@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Construction Data Reconciliation Hub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside>
+      <div class="brand">
+        <span class="mark">▥</span>
+        <div>CONSTRUCTION<span>Reconciliation Hub</span></div>
+      </div>
+      <div class="navlabel">WORKSPACE</div>
+      <nav id="nav"></nav>
+      <div class="local">
+        <span class="dot"></span> Private browser workspace
+        <p>Files are processed on this device. No external services.</p>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header>
+        <div>Workspace <span>/</span> <b id="projectName">No project</b></div>
+        <div class="header-right">
+          <span class="dot"></span> Preview version <b class="avatar">CH</b>
+        </div>
+      </header>
+      <main>
+        <div class="heading">
+          <div>
+            <div class="eyebrow">PROJECT DATA CONTROL</div>
+            <h1 id="title">Dashboard</h1>
+            <p id="subtitle">One clear view of your schedule and commercial data.</p>
+          </div>
+          <div class="actions">
+            <button id="sample">↻ &nbsp;Load Sample Project</button
+            ><button class="primary" id="importGo">＋ &nbsp;Import data</button>
+          </div>
+        </div>
+        <div id="notice" role="status"></div>
+        <div id="content"></div>
+        <footer>
+          <span>CONSTRUCTION DATA RECONCILIATION HUB</span
+          ><span>Browser processing · No external APIs</span>
+        </footer>
+      </main>
+    </div>
+    <dialog id="detail">
+      <div class="split">
+        <h2>Exception details</h2>
+        <button onclick="document.querySelector('#detail').close()">Close</button>
+      </div>
+      <div id="detailBody"></div>
+    </dialog>
+    <script src="xlsx.full.min.js"></script>
+    <script src="core.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
